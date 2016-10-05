@@ -20,7 +20,6 @@
 
 
 
-
 html, body {
     height: 100%;
 }
@@ -77,7 +76,7 @@ html header h1{
 }
 .circle a {
   text-decoration: none;
-  color: white;
+  color: black;
   display: block;
   height: 40px;
   width: 40px;
@@ -90,7 +89,7 @@ html header h1{
 }
 
 .circle a:hover {
-  color: #eef;
+  color: #3d3d3d;
 }
 
 .glyphicon-home {
@@ -99,7 +98,7 @@ html header h1{
   left: calc(50% - 30px);
   text-decoration: none;
   text-align: center;
-  color: #444;
+  color: black;
   border-radius: 50%;
   display: block;
   height: 40px;
@@ -110,5 +109,5 @@ html header h1{
 }
 
 .glyphicon-home:hover {
-  background-color: #eef;
+  background-color: #3d3d3d;
 }
