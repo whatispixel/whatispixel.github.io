@@ -140,11 +140,18 @@ html, body {
     z-index: 10001;
     position: relative;
     transform: translateZ(101px) translateX(0px) translateY(0px) rotateX(0deg) rotateY(0deg);
-    height: 200px; !important
-    width: 200px; !important
+    
 }
 
 .btn {
     margin-left: 50px;
     display: none; 
+}
+.cubeName {
+  text-align: center;
+
+  
+}
+.black{
+  background-color: black;
 }
