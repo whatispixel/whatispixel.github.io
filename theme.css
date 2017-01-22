@@ -146,9 +146,21 @@ html, body {
     
 }
 
-.btn {
+button {
     margin-right: 50px;
     position:absolute; top:0; right:0;    
+
+    background-color: gray;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
 }
 .cubeName {
   text-align: center;
