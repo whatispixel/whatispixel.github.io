@@ -127,7 +127,10 @@ html, body {
 .animation{
   animation: rotate 20s infinite linear;
 }
-
+.currentPage {
+  color: white;
+  padding: 40px;   
+}
 .animation:hover{
     -webkit-animation-play-state:paused; !important
     -moz-animation-play-state:paused;
@@ -144,8 +147,8 @@ html, body {
 }
 
 .btn {
-    margin-left: 50px;
-    display: none; 
+    margin-right: 50px;
+    position:absolute; top:0; right:0;    
 }
 .cubeName {
   text-align: center;
