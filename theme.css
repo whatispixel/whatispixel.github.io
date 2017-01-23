@@ -59,10 +59,9 @@ header{
   color: #3d3d3d;
   font-size: 6em;
   text-align: left;
-  display: flex;
   font-weight: 600;
   z-index: 1001;
-  padding-bottom: 4%;
+  padding-bottom: 40px;
   margin: none;
 }
 
