@@ -1,71 +1,73 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  width: 94%;
+  /* or 100vw, that's the same */
+  height: 100vh;
+  margin:auto; 
 
+}
+.h90 {
+  background-color: #eee;
+  height: 90vh;
+  justify-content: center;
+   perspective: 1000px;
+  perspective-origin: 50% 50%;
+}
+
+
+/* Unrelated styles, for display purposes only */
+.wrapper > div {
+  display: flex;
+  font-family: Helvetica, Arial, sans-serif;
+  align-items: center;
+}
+p {
+  margin: 0;
+}
+
+body .wrapper .h10 {
+  background-color: #eee;
+  height: 10vh;
+justify-content: left;
+margin: 0;
+}
 
 #top, #bottom, #left, #right {
-	background: #3d3d3d;
-	position: fixed;
+  background: #3d3d3d;
+  position: fixed;
     z-index: 1000;
 }
 #left, #right {
-	top: 0; bottom: 0;
-	width: 15px;
+  top: 0; bottom: 0;
+  width: 3%;
 }
 #left { left: 0; }
 #right { right: 0; }
 
 #top, #bottom {
-	left: 0; right: 0;
-	height: 25px;
+  left: 0; right: 0;
+  height: 3%;
 }
 #top { top: 0; }
 #bottom { bottom: 0; }
 
-
-
-html, body {
-    height: 100%;
+header{
+    text-transform: uppercase;
+  color: #3d3d3d;
+  font-size: 6em;
+  text-align: left;
+  display: flex;
+  font-weight: 600;
+  z-index: 1001;
+  padding-bottom: 4%;
+  margin: none;
 }
 
- .container-fluid { 
-    min-height: 100%;
-    height: 100%;
- width: 100%;
-    height: 100%;
-    min-height: 100%;
-    background: #e0e0e0;
 
-}
-.container{
-    margin-top: 10%;
 
-}
-html header h1{
-	text-transform: uppercase;
-	color: #3d3d3d;
-	font-size: 8em;
-	position: absolute; left: 15px; bottom: 15px;
-	margin-top:0px;
-	margin-bottom: 0px;
-	display: flex;
-	font-weight: 600;
-	padding-right: 50px;
-	z-index: 1001;
-}
-
-* {
-   margin: 0px;
-   padding: 0px;
-}
-
-html, body {
-   width: 100%;
-   height: 100%;
-}
-
-.wrap {
-  margin-top: 150px;
-  perspective: 1000px;
-  perspective-origin: 50% 50%;
-}
 
 .cube {
   margin: auto;
@@ -73,6 +75,7 @@ html, body {
   height: 200px;
   width: 200px;
   transform-style: preserve-3d;
+ 
 }
 
 .cube > div {
@@ -82,36 +85,54 @@ html, body {
   height: 100%;
   width: 100%;
   opacity: 0.9;
-  background-color: #000;
+  background-color: #3d3d3d;
   border: solid 1px #eeeeee;
-  color: #ffffff;
+  color: #eee;
 }
 
 .front {
-  transform: translateZ(100px);
+  transform: translateZ(100px); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .back {
   transform: translateZ(-100px) rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .right {
   transform: rotateY(-270deg) translateX(100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transform-origin: top right;
 }
 
 .left {
   transform: rotateY(270deg) translateX(-100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transform-origin: center left;
 }
 
 .top {
   transform: rotateX(-270deg) translateY(-100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transform-origin: top center;
 }
 
 .bottom {
   transform: rotateX(270deg) translateY(100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transform-origin: bottom center;
 }
 @keyframes rotate {
@@ -127,46 +148,44 @@ html, body {
 .animation{
   animation: rotate 20s infinite linear;
 }
-.currentPage {
-  color: white;
-  padding: 40px;   
-}
 .animation:hover{
     -webkit-animation-play-state:paused; !important
     -moz-animation-play-state:paused;
     -o-animation-play-state:paused; 
     animation-play-state:paused;
 }
-
-.active {
-    background-color: blue;
-    z-index: 10001;
-    position: relative;
-    transform: translateZ(101px) translateX(0px) translateY(0px) rotateX(0deg) rotateY(0deg);
-    
+.currentPage{
+  background-color: #3d3d3d;
+  color: white;
+  height: 80%;
+  overflow: auto;
+  
 }
+.page{
+  position: relative;
+  padding: 5%;
+  padding-top: 20%;
 
-button {
-    margin-right: 50px;
-    position:absolute; top:0; right:0;    
-
-    background-color: gray;
+}
+.cubeName{
+  text-transform: uppercase;
+  font-weight: 100;
+}
+.width{
+  width: 80%;
+}
+.button {
+    position: absolute; 
+    top:0; 
+    right:0;
+    background-color: #eee;
     border: none;
-    color: white;
+    color: #3d3d3d;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-  
+   
     cursor: pointer;
-
-}
-.cubeName {
-  text-align: center;
-
-  
-}
-.black{
-  background-color: black;
 }
